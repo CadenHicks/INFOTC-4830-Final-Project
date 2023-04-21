@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from "@angular/common/http";
 import { AppComponent } from './app.component';
+import { ReviewcreateComponent } from './review/reviewcreate/reviewcreate.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReviewcreateComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
