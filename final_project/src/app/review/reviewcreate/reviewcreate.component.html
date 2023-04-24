@@ -1,1 +1,8 @@
-<p>reviewcreate works!</p>
+<mat-card id = form>
+  <form (submit)="onAddReview(postForm)" #postForm = "ngForm">
+    <mat-form-field id="con">
+      <textarea matInput rows="10" name="content" ngModel required #content="ngModel"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Save Review</button>
+  </form>
+</mat-card>

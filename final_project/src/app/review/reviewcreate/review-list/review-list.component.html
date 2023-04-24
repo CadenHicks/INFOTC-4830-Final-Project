@@ -1,0 +1,8 @@
+<mat-accordion [multi]="true" *ngIf="reviews.length > 0">
+  <mat-expansion-panel id="acc">
+      <mat-expansion-panel-header>
+      </mat-expansion-panel-header>
+      <p *ngFor="let review of reviews">{{review.content}}</p>
+  </mat-expansion-panel>
+</mat-accordion>
+

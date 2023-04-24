@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { ReviewcreateService } from './reviewcreate.service';
 
 @Component({
   selector: 'app-reviewcreate',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class ReviewcreateComponent {
 
+  constructor(public ReviewcreateService: ReviewcreateService){}
+
+  onAddReview(form: NgForm){
+    if(form.invalid)
+    {
+      return;
+    }
+    this.ReviewcreateService.addReview(form.value.content);
+    form.resetForm();
+  }
 }
