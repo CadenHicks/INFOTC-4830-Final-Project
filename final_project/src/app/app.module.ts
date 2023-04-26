@@ -15,14 +15,16 @@ import {HttpClientModule} from "@angular/common/http";
 import { ReviewcreateComponent} from './review/reviewcreate/reviewcreate.component';
 import { HeadCreateComponent } from './head-create/head-create.component';
 import { ReviewListComponent } from './review/reviewcreate/review-list/review-list.component';
-
+import { DisplayReviewComponent } from './display-review/display-review.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReviewcreateComponent,
     HeadCreateComponent,
-    ReviewListComponent
+    ReviewListComponent,
+    DisplayReviewComponent
   ],
   imports: [
     MatSlideToggleModule,
@@ -36,7 +38,10 @@ import { ReviewListComponent } from './review/reviewcreate/review-list/review-li
     MatToolbarModule,
     CommonModule,
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path: 'display-review', component: DisplayReviewComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
