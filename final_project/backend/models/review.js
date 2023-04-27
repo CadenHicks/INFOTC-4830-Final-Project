@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 
 reviewSchema = mongoose.Schema({
-  content:{type:String, require:true}
+  title:{type:String, require:true},
+  content:{type:String, require:true},
+  stars:{type:Number, require:true}
 })
 
 module.exports = mongoose.model('review', reviewSchema)

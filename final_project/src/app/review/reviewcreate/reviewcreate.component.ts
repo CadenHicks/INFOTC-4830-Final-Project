@@ -16,7 +16,7 @@ export class ReviewcreateComponent {
     {
       return;
     }
-    this.ReviewcreateService.addReview(form.value.content);
+    this.ReviewcreateService.addReview(form.value.title,form.value.content,form.value.stars);
     form.resetForm();
   }
 }

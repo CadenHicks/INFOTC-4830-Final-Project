@@ -1,7 +1,16 @@
 <mat-card id = form>
   <form (submit)="onAddReview(postForm)" #postForm = "ngForm">
+    <mat-form-field>
+      <input matInput type="text" name="title" placeholder="Enter title" ngModel required minlength="3" #title="ngModel">
+      <mat-error *ngIf="title.invalid">Title not long enough</mat-error>
+    </mat-form-field>
     <mat-form-field id="con">
-      <textarea matInput rows="10" name="content" ngModel required #content="ngModel"></textarea>
+      <textarea matInput rows="10" name="content" placeholder="Enter Review" ngModel required minlength="1" #content="ngModel"></textarea>
+      <mat-error *ngIf="content.invalid">Content not long enough</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" name="stars" placeholder="Enter Number of Stars" ngModel required min="0" max="5" #stars="ngModel">
+      <mat-error *ngIf="stars.invalid">Rate out of 5 Stars</mat-error>
     </mat-form-field>
     <button mat-raised-button color="primary" type="submit">Save Review</button>
   </form>

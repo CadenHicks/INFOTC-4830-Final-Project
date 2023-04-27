@@ -17,6 +17,7 @@ import { HeadCreateComponent } from './head-create/head-create.component';
 import { ReviewListComponent } from './review/reviewcreate/review-list/review-list.component';
 import { DisplayReviewComponent } from './display-review/display-review.component';
 import { RouterModule } from '@angular/router';
+import {MatSliderModule} from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     BrowserModule,
     HttpClientModule,
+    MatSliderModule,
     RouterModule.forRoot([
       {path: 'display-review', component: DisplayReviewComponent},
     ]),

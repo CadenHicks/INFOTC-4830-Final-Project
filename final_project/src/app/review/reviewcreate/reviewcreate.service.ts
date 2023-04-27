@@ -26,9 +26,9 @@ export class ReviewcreateService {
     return this.reviewUpDate.asObservable();
   }
 
-  addReview(content:string)
+  addReview(title:string,content:string,stars:number)
   {
-    const review: Review={id:null, content: content};
+    const review: Review={id:null, title:title, content:content, stars:stars};
     this.http.post<{message:string}>("http://localhost:3000/api/reviews",review)
     .subscribe((responseData) =>{
       console.log(responseData.message)

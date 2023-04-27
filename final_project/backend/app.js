@@ -31,7 +31,9 @@ app.use((req,res,next) => {
 
 app.post("/api/reviews",(req,res,next)=>{
   const review = new ReviewModel({
-    content: req.body.content
+    title: req.body.title,
+    content: req.body.content,
+    stars: req.body.stars
   });
   review.save()
   console.log(review)

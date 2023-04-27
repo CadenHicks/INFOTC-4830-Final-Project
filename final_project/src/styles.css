@@ -28,6 +28,26 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.example-spacer {
-  flex: 1 1 auto;
+/* .example-spacer {
+  flex: 0 1 auto;
+} */
+
+#review
+{
+  padding: 50px;
+  color: white;
 }
+
+#corner
+{
+  color:white;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+#stars
+{
+  text-decoration: underline;
+  font-weight: 60;
+}
+
