@@ -1,0 +1,10 @@
+
+<mat-accordion [multi]="true">
+  <mat-expansion-panel id="acc" *ngFor="let reservations of reservations">
+    <mat-expansion-panel-header>
+      <p>{{reservations.name}}</p>
+    </mat-expansion-panel-header>
+    <p>{{reservations.time}}.</p>
+    <p id="stars">{{reservations.party}} People</p>
+  </mat-expansion-panel>
+</mat-accordion>

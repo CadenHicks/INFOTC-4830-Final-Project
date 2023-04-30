@@ -19,9 +19,10 @@ import { DisplayReviewComponent } from './display-review/display-review.componen
 import { RouterModule } from '@angular/router';
 import {MatSliderModule} from '@angular/material/slider';
 import { ReservationDisplayComponent } from './reservation-display/reservation-display.component';
-import { ReservationListComponent } from './Reservations/reservationcreate/reservation-list/reservation-list.component';
-import { ReservationcreateComponent } from './Reservations/reservationcreate/reservationcreate.component';
+import { ReservationListComponent } from './reservation/reservationcreate/reservation-list/reservation-list.component';
+import { ReservationcreateComponent } from './reservation/reservationcreate/reservationcreate.component'
 import { MenuComponent } from './menu/menu.component';
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,0 +1,17 @@
+<mat-card id = form>
+  <form (submit)="onAddReservation(postForm)" #postForm = "ngForm">
+    <mat-form-field>
+      <input matInput type="text" name="name" placeholder="Enter Name" ngModel required minlength="3" #name="ngModel">
+      <mat-error *ngIf="name.invalid">Title not long enough</mat-error>
+    </mat-form-field>
+    <mat-form-field id="con">
+      <input matInput type="text" name="time" placeholder="Enter Time" ngModel required minlength="1" #time="ngModel">
+      <mat-error *ngIf="time.invalid">time not long enough</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" name="party" placeholder="Enter Number in Party" ngModel required min="0" max="20" #party="ngModel">
+      <mat-error *ngIf="party.invalid">Party max of 20</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Save Reservation</button>
+  </form>
+</mat-card>
