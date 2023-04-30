@@ -32,7 +32,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   flex: 0 1 auto;
 } */
 
-#review, #menu
+#review, #menu, #reservation
 {
   padding: 50px;
   color: white;
