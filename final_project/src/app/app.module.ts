@@ -18,8 +18,10 @@ import { ReviewListComponent } from './review/reviewcreate/review-list/review-li
 import { DisplayReviewComponent } from './display-review/display-review.component';
 import { RouterModule } from '@angular/router';
 import {MatSliderModule} from '@angular/material/slider';
+import { ReservationDisplayComponent } from './reservation-display/reservation-display.component';
+import { ReservationListComponent } from './Reservations/reservationcreate/reservation-list/reservation-list.component';
+import { ReservationcreateComponent } from './Reservations/reservationcreate/reservationcreate.component';
 import { MenuComponent } from './menu/menu.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +30,9 @@ import { MenuComponent } from './menu/menu.component';
     ReviewListComponent,
     DisplayReviewComponent,
     MenuComponent
+    ReservationDisplayComponent,
+    ReservationListComponent,
+    ReservationcreateComponent
   ],
   imports: [
     MatSlideToggleModule,
@@ -46,6 +51,7 @@ import { MenuComponent } from './menu/menu.component';
     RouterModule.forRoot([
       {path: 'display-review', component: DisplayReviewComponent},
       {path: 'menu', component: MenuComponent},
+      {path: 'reservation-display', component: ReservationDisplayComponent},
     ]),
   ],
   providers: [],
