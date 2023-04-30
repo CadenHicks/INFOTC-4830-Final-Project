@@ -53,9 +53,9 @@ app.get('/api/reviews',(req,res,next) =>{
 
 app.post("/api/reservations",(req,res,next)=>{
   const reservation = new ReservationModel({
-    Name: req.body.name,
-    Time: req.body.time,
-    Party: req.body.party
+    name: req.body.name,
+    time: req.body.time,
+    party: req.body.party
   });
   reservation.save()
   console.log(reservation)

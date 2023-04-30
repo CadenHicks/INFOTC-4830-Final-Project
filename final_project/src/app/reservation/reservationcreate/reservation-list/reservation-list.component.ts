@@ -1,14 +1,15 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import {Reservation} from '../reservation.model';
-import { ReservationcreateService } from '../reservationcreate.service';
+import { Component } from '@angular/core';
 import {Subscription} from 'rxjs';
+import { Reservation } from '../reservation.model';
+import { ReservationcreateService } from '../reservationcreate.service';
+
 
 @Component({
   selector: 'app-reservation-list',
   templateUrl: './reservation-list.component.html',
   styleUrls: ['./reservation-list.component.css']
 })
-export class ReservationListComponent implements OnInit, OnDestroy{
+export class ReservationListComponent {
 
   reservations: Reservation[]=[];
   private reservationsSub: Subscription;
@@ -17,8 +18,8 @@ export class ReservationListComponent implements OnInit, OnDestroy{
 
   ngOnInit(){
     this.ReservationcreateService.getReservations();
-    this.reservationsSub = this.ReservationcreateService.getReservationUpdateListener().subscribe((reservations:Reservation[])=>{
-      this.reservations = reservations;
+    this.reservationsSub = this.ReservationcreateService.getReservationUpdateListener().subscribe((reservation:Reservation[])=>{
+      this.reservations = reservation;
     })
   }
 
