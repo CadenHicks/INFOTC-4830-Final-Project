@@ -21,6 +21,7 @@ import {MatSliderModule} from '@angular/material/slider';
 import { ReservationDisplayComponent } from './reservation-display/reservation-display.component';
 import { ReservationListComponent } from './Reservations/reservationcreate/reservation-list/reservation-list.component';
 import { ReservationcreateComponent } from './Reservations/reservationcreate/reservationcreate.component';
+import { MenuComponent } from './menu/menu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { ReservationcreateComponent } from './Reservations/reservationcreate/res
     HeadCreateComponent,
     ReviewListComponent,
     DisplayReviewComponent,
+    MenuComponent
     ReservationDisplayComponent,
     ReservationListComponent,
     ReservationcreateComponent
@@ -48,6 +50,7 @@ import { ReservationcreateComponent } from './Reservations/reservationcreate/res
     MatSliderModule,
     RouterModule.forRoot([
       {path: 'display-review', component: DisplayReviewComponent},
+      {path: 'menu', component: MenuComponent},
       {path: 'reservation-display', component: ReservationDisplayComponent},
     ]),
   ],
