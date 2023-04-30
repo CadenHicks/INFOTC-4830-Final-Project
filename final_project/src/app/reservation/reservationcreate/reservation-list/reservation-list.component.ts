@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import {reservation} from "../reservation.model"
-import { ReservationcreateService } from "../reservationcreate.service"
+import {Reservation} from '../reservation.model';
+import { ReservationcreateService } from '../reservationcreate.service';
 import {Subscription} from 'rxjs';
 
 @Component({
@@ -10,14 +10,14 @@ import {Subscription} from 'rxjs';
 })
 export class ReservationListComponent implements OnInit, OnDestroy{
 
-  reservations: reservation[]=[];
+  reservations: Reservation[]=[];
   private reservationsSub: Subscription;
 
   constructor(public ReservationcreateService: ReservationcreateService){}
 
   ngOnInit(){
-    this.ReservationcreateService.getreservations();
-    this.reservationsSub = this.ReservationcreateService.getreservationUpdateListener().subscribe((reservations:reservation[])=>{
+    this.ReservationcreateService.getReservations();
+    this.reservationsSub = this.ReservationcreateService.getReservationUpdateListener().subscribe((reservations:Reservation[])=>{
       this.reservations = reservations;
     })
   }
