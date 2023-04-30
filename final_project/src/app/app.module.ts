@@ -18,6 +18,7 @@ import { ReviewListComponent } from './review/reviewcreate/review-list/review-li
 import { DisplayReviewComponent } from './display-review/display-review.component';
 import { RouterModule } from '@angular/router';
 import {MatSliderModule} from '@angular/material/slider';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatSliderModule} from '@angular/material/slider';
     ReviewcreateComponent,
     HeadCreateComponent,
     ReviewListComponent,
-    DisplayReviewComponent
+    DisplayReviewComponent,
+    MenuComponent
   ],
   imports: [
     MatSlideToggleModule,
@@ -43,6 +45,7 @@ import {MatSliderModule} from '@angular/material/slider';
     MatSliderModule,
     RouterModule.forRoot([
       {path: 'display-review', component: DisplayReviewComponent},
+      {path: 'menu', component: MenuComponent},
     ]),
   ],
   providers: [],

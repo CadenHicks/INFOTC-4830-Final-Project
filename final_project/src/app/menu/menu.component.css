@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+}
+
+.menu-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h2 {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  font-weight: bold;
+}
+
+.price {
+  float: right;
+}
