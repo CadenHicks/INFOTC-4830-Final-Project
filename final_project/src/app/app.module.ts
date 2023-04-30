@@ -29,7 +29,7 @@ import { MenuComponent } from './menu/menu.component';
     HeadCreateComponent,
     ReviewListComponent,
     DisplayReviewComponent,
-    MenuComponent
+    MenuComponent,
     ReservationDisplayComponent,
     ReservationListComponent,
     ReservationcreateComponent
