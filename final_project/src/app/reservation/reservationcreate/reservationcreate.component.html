@@ -9,7 +9,7 @@
       <mat-error *ngIf="time.invalid">time not long enough</mat-error>
     </mat-form-field>
     <mat-form-field>
-      <input matInput type="number" name="party" placeholder="Enter Number in Party" ngModel required min="0" max="20" #party="ngModel">
+      <input matInput type="number" name="party" placeholder="Enter Number in Party" ngModel required min="1" max="20" #party="ngModel">
       <mat-error *ngIf="party.invalid">Party max of 20</mat-error>
     </mat-form-field>
     <button mat-raised-button color="primary" type="submit">Save Reservation</button>

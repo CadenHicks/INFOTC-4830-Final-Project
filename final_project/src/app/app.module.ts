@@ -22,6 +22,7 @@ import { ReservationDisplayComponent } from './reservation-display/reservation-d
 import { ReservationListComponent } from './reservation/reservationcreate/reservation-list/reservation-list.component';
 import { ReservationcreateComponent } from './reservation/reservationcreate/reservationcreate.component'
 import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MenuComponent } from './menu/menu.component';
     MenuComponent,
     ReservationDisplayComponent,
     ReservationListComponent,
-    ReservationcreateComponent
+    ReservationcreateComponent,
+    FooterComponent
   ],
   imports: [
     MatSlideToggleModule,

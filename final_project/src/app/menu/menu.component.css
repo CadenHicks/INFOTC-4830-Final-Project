@@ -30,3 +30,8 @@ li {
 .price {
   float: right;
 }
+
+#menu {
+  padding-bottom: 50px;
+  color: black;
+}
