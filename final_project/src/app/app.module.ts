@@ -55,6 +55,7 @@ import { FooterComponent } from './footer/footer.component';
       {path: 'display-review', component: DisplayReviewComponent},
       {path: 'menu', component: MenuComponent},
       {path: 'reservation-display', component: ReservationDisplayComponent},
+      {path: 'reservation-list',component: ReservationListComponent},
     ]),
   ],
   providers: [],
