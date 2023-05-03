@@ -23,6 +23,7 @@ import { ReservationListComponent } from './reservation/reservationcreate/reserv
 import { ReservationcreateComponent } from './reservation/reservationcreate/reservationcreate.component'
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     ReservationDisplayComponent,
     ReservationListComponent,
     ReservationcreateComponent,
-    FooterComponent
+    FooterComponent,
+    HomepageComponent
   ],
   imports: [
     MatSlideToggleModule,
@@ -52,6 +54,7 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule,
     MatSliderModule,
     RouterModule.forRoot([
+      {path: '', component: HomepageComponent },
       {path: 'display-review', component: DisplayReviewComponent},
       {path: 'menu', component: MenuComponent},
       {path: 'reservation-display', component: ReservationDisplayComponent},

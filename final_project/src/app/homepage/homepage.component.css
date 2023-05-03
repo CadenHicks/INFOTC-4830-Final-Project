@@ -1,0 +1,88 @@
+body {
+  background-color: #444444;
+  color: white;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Roboto';
+}
+.CenterText {
+  height: 45vh;
+  margin: 0;
+  padding: 0;
+}
+
+hgroup{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-60%);
+  z-index: 2;
+}
+
+h1.BigText {
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+h1.BigText:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+
+}
+a.SubText {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+h1.SubText {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 2.4rem;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: .5px;
+  font-family:'Aclonica';
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+.row {
+  margin: 0 auto;
+  padding-top: 15px;
+  min-height: 100px;
+}
+
+.row > .col {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col {
+  margin-right: 30px;
+  margin-left: 30px;
+}

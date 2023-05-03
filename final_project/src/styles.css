@@ -4,7 +4,7 @@
 }
 
 #header {
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 
 #text
@@ -26,7 +26,7 @@
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;   background-color: #444444;}
 
 /* .example-spacer {
   flex: 0 1 auto;
@@ -34,13 +34,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 #review, #menu, #reservation
 {
-  padding: 50px;
-  color: white;
+  padding: 25px;
+  color: black;
 }
 
 #corner
 {
-  color:white;
+  color:black;
   text-decoration: underline;
   font-weight: 700;
 }
