@@ -3,47 +3,27 @@ body {
   color: white;
   padding: 0;
   margin: 0;
-  perspective: 1px;
-  transform-style: preserve-3d;
   height: 100%;
-  overflow-x: hidden;
   font-family: 'Roboto';
 }
 .CenterText {
-  height: 30vh;
-  overflow: hidden;
+  height: 45vh;
   margin: 0;
   padding: 0;
 }
-.CenterText-text {
-  width: 24em;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  border: .5em solid #fff;
-  margin-left: -10%;
-  padding: 2em 0;
-  text-align: center;
-  z-index: 999;
-}
-.CenterText > div.blur-image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
+
 hgroup{
   display: inline-block;
   text-align: center;
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  padding: .5em 3em;
+  transform: translateX(-50%) translateY(-60%);
   z-index: 2;
 }
 
 h1.BigText {
-  font-size: 120px;
+  font-size: 8rem;
   text-transform: uppercase;
   font-family: 'Gambetta', serif;
   letter-spacing: -3px;
@@ -60,29 +40,37 @@ h1.BigText:hover {
   letter-spacing: 1px;
 
 }
-h1.SubText {
-  font-size: 40px;
+a.SubText {
+  font-size: 2.5rem;
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
+  text-decoration: underline;
+}
+h1.SubText {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: underline;
 }
 h2 {
-  font-size: 1.5em;
-  line-height: 150%;
+  font-size: 2.4rem;
+  line-height: 100%;
   text-align: center;
   letter-spacing: .5px;
+  font-family:'Aclonica';
 }
 
 p {
-  font-size: 25px;
+  font-size: 1.5rem;
   text-align: center;
 
 }
 .row {
   margin: 0 auto;
   padding-top: 15px;
-  padding-bottom: 15px;
-  min-height: 150px;
+  min-height: 100px;
 }
 
 .row > .col {
@@ -98,8 +86,3 @@ p {
   margin-right: 30px;
   margin-left: 30px;
 }
-
-
-
-/* Blank lines for ease and view */
-/* */
