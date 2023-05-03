@@ -42,13 +42,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;   backgroun
 {
   color:black;
   text-decoration: underline;
-  font-weight: 700;
-}
-
-#stars
-{
-  text-decoration: underline;
-  font-weight: 60;
+  /* font-weight: 200; */
 }
 
 /* body {
