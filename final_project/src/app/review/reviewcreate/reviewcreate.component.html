@@ -13,7 +13,7 @@
       <input matInput type="number" name="stars" placeholder="Enter Number of Stars" ngModel required min="1" max="5" #stars="ngModel">
       <mat-error *ngIf="stars.invalid">Rate out of 5 Stars</mat-error>
     </mat-form-field>
-    <button mat-raised-button color="primary" type="submit">Save Review</button>
+    <button mat-raised-button class="custom-button" type="submit">Save Review</button>
   </form>
 </mat-card>
 </div>
