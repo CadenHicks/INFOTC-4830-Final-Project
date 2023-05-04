@@ -1,0 +1,27 @@
+#acc
+{
+  width: 50%;
+  background-color: #cfa72d;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  color: black;
+}
+
+mat-expansion-panel-header
+{
+  font-size: large;
+  text-decoration: underline;
+}
+
+#people,#time
+{
+  font-size: medium;
+}
+
+h1
+{
+  margin-left: 35%;
+  color: white;
+  font-weight: 100;
+}

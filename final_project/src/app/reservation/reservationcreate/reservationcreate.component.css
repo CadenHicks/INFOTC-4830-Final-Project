@@ -1,0 +1,39 @@
+mat-form-field
+{
+  width: 50%;
+  padding: 10px;
+}
+
+body
+{
+  height: 100%;
+  background-color: #444444;
+  /* background-size: cover; */
+  padding: 0;
+  overflow: auto;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button
+{
+  width: 50%;
+}
+
+#form
+{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+  padding-bottom: 20px;
+  background-color: #cfa72d;
+  color: black;
+}
+
+
+h1
+{
+  font-weight: 100;
+}
