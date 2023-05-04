@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff59d;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+mat-card {
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#con textarea {
+  resize: none;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+}
+
+mat-error {
+  color: #f44336;
+}
+
